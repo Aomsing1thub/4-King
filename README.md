@@ -64,6 +64,7 @@ Sector1:AddToggle("Auto Farm Money",false,function(t)
         _G.GGEZ = false
         _G.Noclip = false
         tween:Cancel()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5.059920787811279, 6.042726516723633, 45.41558837890625) * CFrame.new(0,3,0)
     end
 end)
 
@@ -436,7 +437,7 @@ end)
 
 local Sector1 = Tab:CreateSector("Character","right")
 
-Sector1:AddSlider("Select SPEED",12,0,21,1,function(x)
+Sector1:AddSlider("Select SPEED",12,0,18,1,function(x)
 _G.Walk = x
 end)
 
