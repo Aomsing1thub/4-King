@@ -731,10 +731,14 @@ spawn(function()
                     game:GetService("Workspace"):FindFirstChild("LOL"):Destroy()
                 end
                 if Find_C then
+                    pcall(function()
                     game.Players.LocalPlayer.Character:FindFirstChild("Click to TP"):Destroy()
+                    end)
                     else
                     if Find_B then
+                        pcall(function()
                         game.Players.LocalPlayer.Backpack:FindFirstChild("Click to TP"):Destroy()
+                        end)
                     end
                 end
             end
